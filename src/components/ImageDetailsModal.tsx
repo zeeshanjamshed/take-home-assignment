@@ -39,7 +39,7 @@ function ImageDetailsModal ({ image, isOpen, onClose }: ImageDetailsModalProps) 
 
   useEffect(() => {
     loadComments();
-  }, [loadComments]);
+  }, []);
 
   const scrollToBottom = () => {
     if (scrollRef.current) {
