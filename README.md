@@ -4,6 +4,12 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 Run the following commands at the root of the project directory
 
+Install dependencies
+
+```bash
+yarn install
+```
+
 Setup database
 
 ```bash
