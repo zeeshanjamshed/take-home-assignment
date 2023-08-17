@@ -1,6 +1,5 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextRequest, NextResponse } from 'next/server';
 import knex from '../db';
-
 
 export async function POST (req: NextRequest) {
   const { description, image_id } = await req.json();
@@ -13,8 +12,10 @@ export async function POST (req: NextRequest) {
     const [insertedRecord] = await knex('comments').select('*').where('id', commentId[0]);
 
     return NextResponse.json(insertedRecord);
-
   } catch (err) {
-    return NextResponse.json({ error: "something went wrong" });
+    return NextResponse.json(
+      { error: "Something went wrong." },
+      { status: 500 }
+    );
   }
 }

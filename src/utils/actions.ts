@@ -57,15 +57,12 @@ export async function postImage (data: ImageData) {
 }
 
 export async function uploadImage (selectedFile: File) {
-
-  console.log("CLOUDINARY_URL", process.env.CLOUDINARY_URL);
-
   const formData = new FormData();
   formData.append('file', selectedFile);
   formData.append('upload_preset', process.env.CLOUDINARY_PRESET || 'oxbfth5c');
 
   const response = await fetch(
-    'https://api.cloudinary.com/v1_1/dge7uryz0/image/upload',
+    `${process.env.CLOUDINARY_URL || 'https://api.cloudinary.com/v1_1/dge7uryz0'}/image/upload`,
     {
       method: 'POST',
       body: formData,

@@ -13,7 +13,7 @@ function ImageGrid () {
   const [isLoading, setIsLoading] = useState(false)
   const { showToast } = useCustomToast();
 
-  const fetchData = useCallback(async (showLoading = true) => {
+  const loadImages = useCallback(async (showLoading = true) => {
     if (showLoading) {
       setIsLoading(true);
     }
@@ -28,7 +28,7 @@ function ImageGrid () {
   }, [setImages, setIsLoading, showToast]);
 
   useEffect(() => {
-    fetchData();
+    loadImages();
   }, []);
 
   return (
@@ -41,7 +41,7 @@ function ImageGrid () {
         maxWidth='700px'
         boxShadow='lg' p='6' rounded='md' bg='white'
       >
-        <FileUpload loadImages={fetchData} />
+        <FileUpload loadImages={loadImages} />
       </Card>
       <Container maxW='container.xl'>
         {

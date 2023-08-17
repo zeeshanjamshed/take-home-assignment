@@ -15,7 +15,7 @@ function ImageCard ({ image }: { image: ImageInterface }) {
       }
       <Card className='img-card' border='1px' borderColor='gray.300' overflow='hidden' maxW='xl' onClick={onOpen} cursor='pointer' boxShadow='xl' rounded='md' bg='white'>
         <CardBody p='0'>
-          <Flex position="relative" width='100%' height='250'>
+          <Flex position='relative' width='100%' height='250'>
             <Image
               src={image.url}
               alt='Green double couch with wooden legs'
@@ -25,16 +25,16 @@ function ImageCard ({ image }: { image: ImageInterface }) {
           </Flex>
         </CardBody>
         <CardFooter
-          display="flex"
-          alignItems="center"
-          justifyContent="space-between"
-          color="white"
+          display='flex'
+          alignItems='center'
+          justifyContent='space-between'
+          color='white'
           py='2'
           px='4'
-          position="absolute"
+          position='absolute'
           left='0'
           bottom='0'
-          width="100%"
+          width='100%'
           opacity='0'
           className='img-card-footer'
         >

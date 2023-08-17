@@ -35,7 +35,7 @@ function ImageDetailsModal ({ image, isOpen, onClose }: ImageDetailsModalProps) 
     } finally {
       setIsLoading(false);
     }
-  }, [setComments, image.id]);
+  }, [setComments, showToast, image.id]);
 
   useEffect(() => {
     loadComments();
@@ -146,7 +146,7 @@ function Loading () {
       {
         new Array(3).fill(0).map((item, i) => {
           return (
-            <Skeleton height='20px' />
+            <Skeleton key={i} height='20px' />
           )
         })
       }

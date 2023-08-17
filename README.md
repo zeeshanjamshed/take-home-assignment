@@ -7,13 +7,13 @@ Run the following commands at the root of the project directory
 Setup database
 
 ```bash
-docker-compose up -d
+yarn setup:db
 ```
 
 Run migrations
 
 ```bash
-knex migrate:latest
+yarn migrate:db
 ```
 
 Start dev server

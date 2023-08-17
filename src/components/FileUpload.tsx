@@ -100,8 +100,8 @@ function FileUpload ({ loadImages }: FileUploadProps) {
   return (
     <VStack spacing={4} align='stretch' width='100%'>
       {imagePreview &&
-        <Flex position="relative" width='100%' height="230">
-          <Image fill src={imagePreview} alt="Preview" objectFit='contain' />
+        <Flex position='relative' width='100%' height='230'>
+          <Image fill src={imagePreview} alt='Preview' objectFit='contain' />
         </Flex>
       }
       <form onSubmit={handleSubmit}>
@@ -113,7 +113,7 @@ function FileUpload ({ loadImages }: FileUploadProps) {
             onChange={handleChangeTitle}
             placeholder='Image title...'
           />
-          {formErrors.title && <FormHelperText color="red">{formErrors.title}</FormHelperText>}
+          {formErrors.title && <FormHelperText color='red'>{formErrors.title}</FormHelperText>}
         </FormControl>
         <VStack flexDirection='row' alignItems='start' mt={4}>
           <FormControl>
@@ -128,7 +128,7 @@ function FileUpload ({ loadImages }: FileUploadProps) {
                 Choose File
               </Button>
             </FormLabel>
-            {formErrors.file && <FormHelperText color="red">{formErrors.file}</FormHelperText>}
+            {formErrors.file && <FormHelperText color='red'>{formErrors.file}</FormHelperText>}
           </FormControl>
           <Button type='submit' colorScheme='blue'>{isLoading ? <Spinner /> : 'Upload'}</Button>
         </VStack>

@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "migrate": "knex --knexfile ./config/knexfile.ts migrate:latest"
+    "setup:db": "docker compose up -d",
+    "migrate:db": "npx knex --knexfile ./knexfile.js migrate:latest"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.1.0",

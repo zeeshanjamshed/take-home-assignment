@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextRequest, NextResponse } from 'next/server';
 import knex from '../../../db';
 export async function GET (
   req: NextRequest,
@@ -13,7 +13,7 @@ export async function GET (
     return NextResponse.json(data);
   } catch (err) {
     return NextResponse.json(
-      { error: "Something went wrong." },
+      { error: 'Something went wrong.' },
       { status: 500 }
     );
   }
