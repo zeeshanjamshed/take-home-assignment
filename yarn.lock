@@ -3455,7 +3455,7 @@ jws@^4.0.0:
 
 knex@^2.5.1:
   version "2.5.1"
-  resolved "https://registry.npmjs.org/knex/-/knex-2.5.1.tgz"
+  resolved "https://registry.yarnpkg.com/knex/-/knex-2.5.1.tgz#a6c6b449866cf4229f070c17411f23871ba52ef9"
   integrity sha512-z78DgGKUr4SE/6cm7ku+jHvFT0X97aERh/f0MUKAKgFnwCYBEW4TFBqtHWFYiJFid7fMrtpZ/gxJthvz5mEByA==
   dependencies:
     colorette "2.0.19"
