@@ -122,6 +122,7 @@ function FileUpload ({ loadImages }: FileUploadProps) {
               display='none'
               id='fileInput'
               onChange={handleFileChange}
+              accept='.png,.jpg,.jpeg'
             />
             <FormLabel htmlFor='fileInput'>
               <Button as='span' leftIcon={<AttachmentIcon />}>

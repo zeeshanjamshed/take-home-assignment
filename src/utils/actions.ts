@@ -62,7 +62,7 @@ export async function uploadImage (selectedFile: File) {
   formData.append('upload_preset', process.env.CLOUDINARY_PRESET || 'oxbfth5c');
 
   const response = await fetch(
-    `${process.env.CLOUDINARY_URL || 'https://api.cloudinary.com/v1_1/dge7uryz0'}/image/upload`,
+    `${process.env.NEXT_PUBLIC_CLOUDINARY_URL}/image/upload`,
     {
       method: 'POST',
       body: formData,
