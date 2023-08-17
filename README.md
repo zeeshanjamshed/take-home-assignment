@@ -2,6 +2,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+Make sure to have node version `>= 16 and <= 18`;
+
 Run the following commands at the root of the project directory
 
 Install dependencies
